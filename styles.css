@@ -38,6 +38,7 @@
   font-size: 17px;
 }
 
+
 /* cuando pasamos sobre la caja de algun topnav_icon */
 .topnav_icon:hover {
   background-color: #ddd; /* El fondo pasa a ser blanco*/
