@@ -45,3 +45,37 @@ body {
     gap: 20px;
     justify-content: center;
 }
+
+.topnav {
+    overflow: hidden;
+    background-color: #000000;
+}
+
+/* Style the links inside the navigation bar */
+.topnav_icon {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+/* cuando pasamos sobre la caja de algun topnav_icon */
+.topnav_icon:hover {
+  background-color: #ddd; /* El fondo pasa a ser blanco*/
+  color: black; /* letra pasa a ser negra */
+}
+
+/* En la pagina que estemos, se va a ver de otro color */
+.topnav_icon.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav_icon.icon {
+  display: none;
+}
