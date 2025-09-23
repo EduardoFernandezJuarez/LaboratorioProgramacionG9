@@ -21,7 +21,7 @@
     text-align: center;              /* texto centrado */
     border-radius: 20px; 
 
-    background: rgb(84, 85, 88);
+    background: rgba(84, 85, 88, 0.7);
 }
 
 .tarj_art img{
