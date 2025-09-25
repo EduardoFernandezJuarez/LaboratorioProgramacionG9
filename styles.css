@@ -47,11 +47,11 @@
 }
 
 .topnav {
-    overflow: hidden;
-    background-color: #000000;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-/* Style the links inside the navigation bar */
 .topnav_icon {
   float: left;
   display: block;
