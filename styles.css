@@ -22,9 +22,9 @@
   color:white;
   text-align: center;
   margin-bottom: 15px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Alan Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 1px;
   background: rgba(1, 154, 224, 0.6);
@@ -63,6 +63,7 @@
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
+
   }
   .tarj_art{
       display: flex;
@@ -77,6 +78,7 @@
       border-radius: 20px; 
       background: rgba(1, 154, 224, 0.6);
       position:relative;
+      
   }
   .tarj_art:hover{
     background: rgba(6, 195, 252, 0.822);
@@ -108,6 +110,9 @@
     position: relative;
     
   }
+  .link_artista{
+    text-decoration: none; /* Quita el subrayado del link */
+  }
 
 
 /*BARRA DE NAVEGACION*/
@@ -132,8 +137,10 @@
   align-items: center ;
   padding: 14px 16px;
   text-decoration: none;
-  font-family:monospace;
-  font-size: 17px;
+  font-family: "Alan Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
   transition: background-color 0.3 ease;
   margin-right: 30px;
 }
@@ -154,6 +161,7 @@
   width: 5%;
   height: 5%;
 }
+
 
 /* #logo {
   background-size: contain;
