@@ -118,7 +118,7 @@
 }
 .topnav {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
     background: rgba(4, 72, 103, 0.6);
     width: 100%;
@@ -127,8 +127,10 @@
   }
 
 .topnav_icon {
-  color: #f2f2f2;
+  display: flex;
+  color: white;
   text-align: center;
+  align-items: center ;
   padding: 14px 16px;
   text-decoration: none;
   font-family:monospace;
@@ -138,9 +140,27 @@
 }
 .topnav_icon:hover {/* cuando pasamos sobre la caja de algun topnav_icon */
   background-color: #004c99; 
-  color: #fff; 
+  color: #fff;
+  border: rgb(0, 0, 0) 2px solid;
 }
 .topnav_icon.active {/* En la pagina que estemos, se va a ver de otro color */
   background-color: white;
   color: black;
 }
+
+#logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: black;
+  width: 5%;
+  height: 5%;
+}
+
+/* #logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: black;
+  height: 20%;
+  width: 20%;
+  padding: 0%;
+} */
