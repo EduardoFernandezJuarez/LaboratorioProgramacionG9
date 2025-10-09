@@ -60,7 +60,7 @@
   /*TARJETAS DE ARTISTAS RESULTADOS DE LA BUSQUEDA*/
   #zona_tarj{
       display:flex;
-      flex-wrap: wrap;
+      flex-direction: row;
       gap: 20px;
       justify-content: center;
 
@@ -124,7 +124,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(1, 154, 224, 0.6);
+    background: rgba(4, 72, 103, 0.6);
     width: 100%;
     height: 60px;
     position: relative;
