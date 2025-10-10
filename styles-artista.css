@@ -11,7 +11,7 @@
   flex-direction: column;
   border-radius: 8px;
   padding: 10px;
-  align-items: left;
+  align-items:start;
   width: 80%;
   height: 20%;
   justify-content: left;       
