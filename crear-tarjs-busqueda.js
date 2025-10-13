@@ -31,7 +31,7 @@ function crearTarjs(){
     artistasPagina.forEach(art => {
         const nombreArtista = art.nombre;
         const link_img = art.imagen;
-        const tarj = `<a href="index-artista.html" class="link_artista">
+        const tarj = `<a href="index-artista.html" class="link_artista" data-artista="${nombreArtista}">
                     <div class="tarj_art">
                         <p>${nombreArtista}</p>
                         <img src="${link_img}" alt="Imagen de ${nombreArtista}">
@@ -41,6 +41,14 @@ function crearTarjs(){
     });
     const totalPags = Math.ceil(artistasFiltrado.length / tarjsPorPag);
     mostrarSelectPags(totalPags); //muestra los botones de las paginas
+    //Evento guarda artista para el index-artista
+    document.querySelectorAll(".link_artista").forEach(link => {
+        link.addEventListener("click", (e) => {
+            const nombre = e.currentTarget.dataset.artista;
+            localStorage.setItem("artistaSeleccionado", nombre);
+        });
+    });
+
 }
 
 function mostrarSelectPags(total){
@@ -71,6 +79,12 @@ inputBusqueda.addEventListener("input", e => {
     crearTarjs();
 });
 
+document.querySelectorAll(".link_artista").forEach(link => {
+    link.addEventListener("click", (e) => {
+        const nombre = e.currentTarget.dataset.artista;
+        localStorage.setItem("artistaSeleccionado", nombre);
+    });
+});
 
 
 
@@ -91,8 +105,7 @@ inputBusqueda.addEventListener("input", e => {
 
 
 
-
-//Logica para traer del json solo lo que se va a mostrar en la pagina, obsoleto por la busqueda
+//Logica para traer del json solo lo que se va a mostrar en la pagina, obsoleto por la busqueda que hace q tengas q traer todo :(
 /*function crearTarjs(pagina){
     //crea las paginas con las tarjetas
     fetch('artistasBD.json')
