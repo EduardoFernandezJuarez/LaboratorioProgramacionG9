@@ -1,6 +1,7 @@
 const zonaTarj = document.querySelector("#zona_tarj");
 
-const bd = "artistasBD.json";
+fetch('artistasBD.json').then(res => res.json()).then(data => crearTarjs(data.artistas)).catch(error => console.error("Error: ", error));
+
 
 function crearTarjs(artistas){
     zonaTarj.innerHTML = "";
@@ -11,8 +12,11 @@ function crearTarjs(artistas){
         const tarj = `<a href="index-artista.html" class="link_artista">
                 <div class="tarj_art">
                     <p>${nombreArtista}</p>
-                    <img src="${link_img}" alt="${nombreArtista}">
+                    <img src="${link_img}" alt="Imagen de ${nombreArtista}">
                 </div></a>`;
+        
+        zonaTarj.innerHTML += tarj;
     });
 }
+
 

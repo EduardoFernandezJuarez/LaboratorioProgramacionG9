@@ -59,11 +59,13 @@
 
   /*TARJETAS DE ARTISTAS RESULTADOS DE LA BUSQUEDA*/
   #zona_tarj{
-      display:flex;
-      flex-direction: row;
-      gap: 20px;
-      justify-content: center;
-
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-right: 10%;
+    margin-left: 10%;
   }
   .tarj_art{
       display: flex;
