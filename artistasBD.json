@@ -1,0 +1,124 @@
+{
+  "artistas": [
+    {
+      "nombre": "Taylor Swift",
+      "imagen": "/imagenes/taylor.jpg",
+      "generos": ["Pop", "Country"]
+    },
+    {
+      "nombre": "Radiohead",
+      "imagen": "/imagenes/Radiohead.jpg",
+      "generos": ["Alternative Rock", "Experimental"]
+    },
+    {
+      "nombre": "Taylor Swift",
+      "imagen": "/imagenes/taylorswift.jpg",
+      "generos": ["Pop", "Country", "Folk"]
+    },
+    {
+      "nombre": "Radiohead",
+      "imagen": "/imagenes/radiohead.jpg",
+      "generos": ["Alternative Rock", "Experimental", "Art Rock"]
+    },
+    {
+      "nombre": "Arctic Monkeys",
+      "imagen": "/imagenes/arcticmonkeys.jpg",
+      "generos": ["Indie Rock", "Alternative Rock"]
+    },
+    {
+      "nombre": "ABBA",
+      "imagen": "/imagenes/abba.jpg",
+      "generos": ["Pop", "Disco"]
+    },
+    {
+      "nombre": "The Smiths",
+      "imagen": "/imagenes/thesmiths.jpg",
+      "generos": ["Alternative Rock", "Indie Pop", "Post-Punk"]
+    },
+    {
+      "nombre": "Lady Gaga",
+      "imagen": "/imagenes/ladygaga.jpg",
+      "generos": ["Pop", "Dance", "Electronic"]
+    },
+    {
+      "nombre": "Al Green",
+      "imagen": "/imagenes/algreen.jpg",
+      "generos": ["Soul", "R&B"]
+    },
+    {
+      "nombre": "The Cranberries",
+      "imagen": "/imagenes/thecranberries.jpg",
+      "generos": ["Alternative Rock", "Dream Pop"]
+    },
+    {
+      "nombre": "The Cure",
+      "imagen": "/imagenes/thecure.jpg",
+      "generos": ["Post-Punk", "New Wave", "Gothic Rock"]
+    },
+    {
+      "nombre": "Pixies",
+      "imagen": "/imagenes/pixies.jpg",
+      "generos": ["Alternative Rock", "Indie Rock"]
+    },
+    {
+      "nombre": "David Bowie",
+      "imagen": "/imagenes/davidbowie.jpg",
+      "generos": ["Rock", "Glam Rock", "Art Rock"]
+    },
+    {
+      "nombre": "Dua Lipa",
+      "imagen": "/imagenes/dualipa.jpg",
+      "generos": ["Pop", "Dance", "Disco"]
+    },
+    {
+      "nombre": "Sabrina Carpenter",
+      "imagen": "/imagenes/sabrinacarpenter.jpg",
+      "generos": ["Pop"]
+    },
+    {
+      "nombre": "Gustavo Cerati",
+      "imagen": "/imagenes/cerati.jpg",
+      "generos": ["Rock", "Pop Rock", "Alternative"]
+    },
+    {
+      "nombre": "The Killers",
+      "imagen": "/imagenes/thekillers.jpg",
+      "generos": ["Alternative Rock", "New Wave", "Indie Rock"]
+    },
+    {
+      "nombre": "Interpol",
+      "imagen": "/imagenes/interpol.jpg",
+      "generos": ["Post-Punk Revival", "Indie Rock"]
+    },
+    {
+      "nombre": "Manny Walters",
+      "imagen": "/imagenes/mannywalters.jpg",
+      "generos": ["Soul", "Blues", "Rock"]
+    },
+    {
+      "nombre": "Olivia Rodrigo",
+      "imagen": "/imagenes/oliviarodrigo.jpg",
+      "generos": ["Pop", "Pop Rock", "Alternative"]
+    },
+    {
+      "nombre": "The Police",
+      "imagen": "/imagenes/thepolice.jpg",
+      "generos": ["Rock", "New Wave", "Reggae Rock"]
+    },
+    {
+      "nombre": "Queens of the Stone Age",
+      "imagen": "/imagenes/qotsa.jpg",
+      "generos": ["Rock", "Stoner Rock", "Alternative Rock"]
+    },
+    {
+      "nombre": "Red Hot Chili Peppers",
+      "imagen": "/imagenes/rhcp.jpg",
+      "generos": ["Funk Rock", "Alternative Rock"]
+    },
+    {
+      "nombre": "The Smashing Pumpkins",
+      "imagen": "/imagenes/thesmashingpumpkins.jpg",
+      "generos": ["Alternative Rock", "Grunge", "Dream Pop"]
+    }
+  ]
+}
