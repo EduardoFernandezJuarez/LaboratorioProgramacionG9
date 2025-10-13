@@ -118,8 +118,26 @@
   }
 
 /*BOTONES DE PAGINACION*/
+#selectPag{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 5px;
+}
 
-
+#selectPag button{
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(1, 154, 224, 0.6);
+  color: white;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+#selectPag button.active{
+  background: #1db954;
+  font-weight: bold;
+}
 
 
 
