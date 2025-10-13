@@ -11,16 +11,6 @@
       "generos": ["Alternative Rock", "Experimental"]
     },
     {
-      "nombre": "Taylor Swift",
-      "imagen": "/imagenes/taylorswift.jpg",
-      "generos": ["Pop", "Country", "Folk"]
-    },
-    {
-      "nombre": "Radiohead",
-      "imagen": "/imagenes/radiohead.jpg",
-      "generos": ["Alternative Rock", "Experimental", "Art Rock"]
-    },
-    {
       "nombre": "Arctic Monkeys",
       "imagen": "/imagenes/arcticmonkeys.jpg",
       "generos": ["Indie Rock", "Alternative Rock"]
@@ -72,7 +62,7 @@
     },
     {
       "nombre": "Sabrina Carpenter",
-      "imagen": "/imagenes/sabrinacarpenter.jpg",
+      "imagen": "/imagenes/sabrina.jpg",
       "generos": ["Pop"]
     },
     {
