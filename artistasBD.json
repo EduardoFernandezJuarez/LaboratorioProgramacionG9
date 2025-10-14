@@ -17,7 +17,7 @@
     },
     {
       "nombre": "ABBA",
-      "imagen": "imagenes/abba.jpg",
+      "imagen": "imagenes/abba.png",
       "generos": ["Pop", "Disco"]
     },
     {
@@ -247,7 +247,7 @@
     },
     {
       "nombre": "Fito Páez",
-      "imagen": "imagenes/fito_paez.jpg",
+      "imagen": "imagenes/fitopaez.jpg",
       "generos": ["Pop Rock", "Rock"]
     },
     {
@@ -279,6 +279,11 @@
       "nombre": "Los Enanitos Verdes",
       "imagen": "imagenes/losenanitosverdes.jpg",
       "generos": ["Pop Rock", "Rock"]
+    },
+    {
+      "nombre": "Hornet",
+      "imagen": "imagenes/hornet.jpg",
+      "generos": ["R&B", "Rock"]
     }
   ]
 }

@@ -79,12 +79,6 @@ inputBusqueda.addEventListener("input", e => {
     crearTarjs();
 });
 
-document.querySelectorAll(".link_artista").forEach(link => {
-    link.addEventListener("click", (e) => {
-        const nombre = e.currentTarget.dataset.artista;
-        localStorage.setItem("artistaSeleccionado", nombre);
-    });
-});
 
 
 
