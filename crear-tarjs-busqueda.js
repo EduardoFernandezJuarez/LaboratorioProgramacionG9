@@ -26,7 +26,6 @@ function crearTarjs(){
     const artistasPagina = artistasFiltrado.slice(inicio, fin);
 
     zonaTarj.innerHTML = "";
-    
 
     artistasPagina.forEach(art => {
         const nombreArtista = art.nombre;
@@ -41,6 +40,7 @@ function crearTarjs(){
     });
     const totalPags = Math.ceil(artistasFiltrado.length / tarjsPorPag);
     mostrarSelectPags(totalPags); //muestra los botones de las paginas
+
     //Evento guarda artista para el index-artista
     document.querySelectorAll(".link_artista").forEach(link => {
         link.addEventListener("click", (e) => {
