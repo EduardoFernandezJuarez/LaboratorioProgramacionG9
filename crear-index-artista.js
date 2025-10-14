@@ -16,6 +16,7 @@ fetch("artistasBD.json")
         const artistasDelGenero = artistas.filter(a => a.nombre != artista.nombre && a.generos.includes(genero)).slice(0,3);
 
         if(artistasDelGenero.length > 0){
+            //lo creo de a poco para ir agregandole las cosas (se podria hacer en un string en una variable como las tarj_art)
             const tarjGenero = document.createElement("div");
             tarjGenero.classList.add("tarj_gen"); //creo tarjeta de genero
             const titulo = document.createElement("h2");
@@ -23,14 +24,15 @@ fetch("artistasBD.json")
             tarjGenero.appendChild(titulo);
             const zonaTarj = document.createElement("div");
             zonaTarj.classList.add("zona_tarj");
-                    
+            
+            //creo tarjetas de artistas que van dentro de la tarjeta de genero
             artistasDelGenero.forEach(a => {
                 const nombreArtista = a.nombre;
                 const link_img = a.imagen;
                 const tarj = document.createElement("div");
                 tarj.classList.add("tarj_art");
                 tarj.innerHTML=`<p>${nombreArtista}</p>
-                                <img src="${link_img}" alt="Imagen de ${nombreArtista}"`;
+                                <img src="${link_img}" alt="Imagen de ${nombreArtista}>"`;
                 zonaTarj.appendChild(tarj);
             });
             tarjGenero.appendChild(zonaTarj);
@@ -43,3 +45,20 @@ fetch("artistasBD.json")
     });
 })
 .catch(err => console.error("Error: ",err));
+
+/* La estructura termina siendo:
+    <div id="zona_gen">
+
+        <div class="tarj_gen"> //Se repite por genero
+            <h2>TITULO GENERO</h2>
+            <div class="zona_tarj">
+
+                <div class="tarj_art"> //Se repite por 3 artistas
+                    <p>nombre</p>
+                    <img src="link img" alt>
+                </div>
+
+            </div>
+        </div>
+
+    </div> */
