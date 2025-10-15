@@ -62,3 +62,11 @@ fetch("artistasBD.json")
         </div>
 
     </div> */
+
+/* Viendo que no tenemos acceso al artistas similares de spotify se podriamos implementar
+algun metodo para setear similitud entre artistas de manera arbitraria
+1.Que compartan generos
+2.Agregar atributos dentro de cada genero entonces poder calcular que tanto se parecen dentro de el genero especifico
+3.Que cada artista tenga una similitud calculada con cada otro artista de ese genero (grafo con pesos, que sea dentro de cada genero porq sino es un monton)
+
+atributos pueden ser tipo mood, que tan movido es(?*/
