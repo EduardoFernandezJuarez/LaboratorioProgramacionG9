@@ -32,7 +32,7 @@ fetch("artistasBD.json")
                 const tarj = document.createElement("div");
                 tarj.classList.add("tarj_art");
                 tarj.innerHTML=`<p>${nombreArtista}</p>
-                                <img src="${link_img}" alt="Imagen de ${nombreArtista}>"`;
+                                <img src="${link_img}" alt="Imagen de ${nombreArtista}">`;
                 zonaTarj.appendChild(tarj);
             });
             tarjGenero.appendChild(zonaTarj);

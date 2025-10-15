@@ -83,7 +83,7 @@
     {
       "nombre": "Manny Walters",
       "imagen": "imagenes/mannywalters.jpg",
-      "generos": ["Soul", "Blues", "Rock"]
+      "generos": ["Soul", "Blues"]
     },
     {
       "nombre": "Olivia Rodrigo",
