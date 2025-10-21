@@ -66,7 +66,7 @@ function mostrarSelectPags(total){
     }
 }
 
-inputBusqueda.addEventListener("input", e => {
+inputBusqueda.addEventListener("input", (e) => {
     //Evento de busqueda
     const texto = e.target.value.toLowerCase().trim();
     pagActual = 1;
@@ -74,7 +74,7 @@ inputBusqueda.addEventListener("input", e => {
     if(texto === ""){
         artistasFiltrado = artistasCompleto;
     }else{
-        artistasFiltrado = artistasCompleto.filter(art => art.nombre.toLowerCase().trim().startsWith(texto));
+        artistasFiltrado = artistasCompleto.filter(art => art.nombre.toLowerCase().trim().includes(texto));
     }
     crearTarjs();
 });

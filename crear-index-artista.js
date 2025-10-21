@@ -1,9 +1,14 @@
 const main = document.querySelector("main");
+const head = document.querySelector("head");
 const zonaGen = document.createElement("section");
 zonaGen.id = "zona_gen";
 main.innerHTML="";
 main.appendChild(zonaGen);
 const artistaSeleccionado = localStorage.getItem("artistaSeleccionado");
+
+const title = document.createElement("title");
+title.innerHTML=`Dynomo: ${artistaSeleccionado}`;
+head.appendChild(title);
 
 fetch("artistasBD.json")
 .then(res => res.json())
@@ -65,7 +70,7 @@ fetch("artistasBD.json")
 
 /* Viendo que no tenemos acceso al artistas similares de spotify se podriamos implementar
 algun metodo para setear similitud entre artistas de manera arbitraria
-1.Que compartan generos
+1.Que compartan generos y cuanto mas generos compartan mejor
 2.Agregar atributos dentro de cada genero entonces poder calcular que tanto se parecen dentro de el genero especifico
 3.Que cada artista tenga una similitud calculada con cada otro artista de ese genero (grafo con pesos, que sea dentro de cada genero porq sino es un monton)
 
