@@ -10,7 +10,7 @@ const title = document.createElement("title");
 title.innerHTML=`Dynomo: ${artistaSeleccionado}`;
 head.appendChild(title);
 
-fetch("artistasBD.json")
+fetch("jsons/artistasBD.json")
 .then(res => res.json())
 .then(data => {
     const artistas = data.artistas;

@@ -10,7 +10,7 @@ let artistasCompleto = [];
 let artistasFiltrado = [];
 const tarjsPorPag = 9;
 
-fetch("artistasBD.json")
+fetch("jsons/artistasBD.json")
 .then(res => res.json())
 .then(data => {
     artistasCompleto = data.artistas;
