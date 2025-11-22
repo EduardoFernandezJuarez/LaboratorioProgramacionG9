@@ -48,7 +48,11 @@ fetch(`/artista/${nombreArtistaParametro}`)//agregado antes estaba "jsons/artist
                     tarj.classList.add("tarj_art");
                     tarj.innerHTML=`<p>${nombreArtista}</p>
                                     <img src="${link_img}" alt="Imagen de ${nombreArtista}">`;
-                    zonaTarj.appendChild(tarj);
+                    const linkArtista = document.createElement("a");
+                    linkArtista.href = `/crear-index-artista?nombre=${nombreArtista}`;
+                    linkArtista.classList.add("link_artista");
+                    linkArtista.appendChild(tarj);
+                    zonaTarj.appendChild(linkArtista);
                 });
                 tarjGenero.appendChild(zonaTarj);
                 zonaGen.appendChild(tarjGenero);
