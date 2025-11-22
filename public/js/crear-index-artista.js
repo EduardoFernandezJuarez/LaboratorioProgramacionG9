@@ -4,49 +4,60 @@ const zonaGen = document.createElement("section");
 zonaGen.id = "zona_gen";
 main.innerHTML="";
 main.appendChild(zonaGen);
-const artistaSeleccionado = localStorage.getItem("artistaSeleccionado");
+// const artistaSeleccionado = localStorage.getItem("artistaSeleccionado");
+
+const urlParams = new URLSearchParams(window.location.search);
+const nombreArtistaParametro = urlParams.get("nombre");
 
 const title = document.createElement("title");
-title.innerHTML=`Dynomo: ${artistaSeleccionado}`;
+title.innerHTML=`Dynomo: ${nombreArtistaParametro}`;
 head.appendChild(title);
 
-fetch("jsons/artistasBD.json")
+
+
+fetch(`/artista/${nombreArtistaParametro}`)//agregado antes estaba "jsons/artistasBD.json"
 .then(res => res.json())
 .then(data => {
-    const artistas = data.artistas;
-    const artista = artistas.find(a => a.nombre === artistaSeleccionado);
+    // const artistas = data.artistas;
+    // const artista = artistas.find(a => a.nombre === artistaSeleccionado);
+
+    const artista = data;
     
     artista.generos.forEach(genero => {
-        //busca los 3 artistas q compartan generos y no sean el propio artista
-        const artistasDelGenero = artistas.filter(a => a.nombre != artista.nombre && a.generos.includes(genero)).slice(0,3);
+        // //busca los 3 artistas q compartan generos y no sean el propio artista
+        // const artistasDelGenero = artistas.filter(a => a.nombre != artista.nombre && a.generos.includes(genero)).slice(0,3);
 
-        if(artistasDelGenero.length > 0){
-            //lo creo de a poco para ir agregandole las cosas (se podria hacer en un string en una variable como las tarj_art)
-            const tarjGenero = document.createElement("div");
-            tarjGenero.classList.add("tarj_gen"); //creo tarjeta de genero
-            const titulo = document.createElement("h2");
-            titulo.textContent = genero.toUpperCase();
-            tarjGenero.appendChild(titulo);
-            const zonaTarj = document.createElement("div");
-            zonaTarj.classList.add("zona_tarj");
-            
-            //creo tarjetas de artistas que van dentro de la tarjeta de genero
-            artistasDelGenero.forEach(a => {
-                const nombreArtista = a.nombre;
-                const link_img = a.imagen;
-                const tarj = document.createElement("div");
-                tarj.classList.add("tarj_art");
-                tarj.innerHTML=`<p>${nombreArtista}</p>
-                                <img src="${link_img}" alt="Imagen de ${nombreArtista}">`;
-                zonaTarj.appendChild(tarj);
-            });
-            tarjGenero.appendChild(zonaTarj);
-            zonaGen.appendChild(tarjGenero);
+        fetch(`/artistasRelacionados/${genero}/${artista.nombre}`)
+        .then(res => res.json())
+        .then(artistasDelGenero => {
+            if(artistasDelGenero.length > 0){
+                //lo creo de a poco para ir agregandole las cosas (se podria hacer en un string en una variable como las tarj_art)
+                const tarjGenero = document.createElement("div");
+                tarjGenero.classList.add("tarj_gen"); //creo tarjeta de genero
+                const titulo = document.createElement("h2");
+                titulo.textContent = genero.toUpperCase();
+                tarjGenero.appendChild(titulo);
+                const zonaTarj = document.createElement("div");
+                zonaTarj.classList.add("zona_tarj");
+                
+                //creo tarjetas de artistas que van dentro de la tarjeta de genero
+                artistasDelGenero.forEach(a => {
+                    const nombreArtista = a.nombre;
+                    const link_img = a.imagen;
+                    const tarj = document.createElement("div");
+                    tarj.classList.add("tarj_art");
+                    tarj.innerHTML=`<p>${nombreArtista}</p>
+                                    <img src="${link_img}" alt="Imagen de ${nombreArtista}">`;
+                    zonaTarj.appendChild(tarj);
+                });
+                tarjGenero.appendChild(zonaTarj);
+                zonaGen.appendChild(tarjGenero);
 
-            const separar = document.createElement("div");
-            separar.classList.add("separar");
-            zonaGen.appendChild(separar);
-        }
+                const separar = document.createElement("div");
+                separar.classList.add("separar");
+                zonaGen.appendChild(separar);
+            }
+        });
     });
 })
 .catch(err => console.error("Error: ",err));
