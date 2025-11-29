@@ -10,7 +10,7 @@ let artistasCompleto = [];
 let artistasFiltrado = []; 
 const tarjsPorPag = 9;
 
-fetch("/artistas")
+fetch("/api/artista/artistas")
 .then(res => res.json())
 .then(data => {
     artistasCompleto = data.artistas;
@@ -30,7 +30,7 @@ function crearTarjs(){
     artistasPagina.forEach(art => {
         const nombreArtista = art.nombre;
         const link_img = art.imagen;
-        const tarj = `<a href="/crear-index-artista?nombre=${nombreArtista}" class="link_artista" data-artista="${nombreArtista}">
+        const tarj = `<a href="/api/artista/crear-index-artista?nombre=${nombreArtista}" class="link_artista" data-artista="${nombreArtista}">
                     <div class="tarj_art">  
                         <p>${nombreArtista}</p>
                         <img src="${link_img}" alt="Imagen de ${nombreArtista}">

@@ -15,7 +15,7 @@ head.appendChild(title);
 
 
 
-fetch(`/artista/${nombreArtistaParametro}`)//agregado antes estaba "jsons/artistasBD.json"
+fetch(`/api/artista/${nombreArtistaParametro}`)//agregado antes estaba "jsons/artistasBD.json"
 .then(res => res.json())
 .then(data => {
     // const artistas = data.artistas;
@@ -27,7 +27,7 @@ fetch(`/artista/${nombreArtistaParametro}`)//agregado antes estaba "jsons/artist
         // //busca los 3 artistas q compartan generos y no sean el propio artista
         // const artistasDelGenero = artistas.filter(a => a.nombre != artista.nombre && a.generos.includes(genero)).slice(0,3);
 
-        fetch(`/artistasRelacionados/${genero}/${artista.nombre}`)
+        fetch(`/api/artista/artistasRelacionados/${genero}/${artista.nombre}`)
         .then(res => res.json())
         .then(artistasDelGenero => {
             if(artistasDelGenero.length > 0){
@@ -49,7 +49,7 @@ fetch(`/artista/${nombreArtistaParametro}`)//agregado antes estaba "jsons/artist
                     tarj.innerHTML=`<p>${nombreArtista}</p>
                                     <img src="${link_img}" alt="Imagen de ${nombreArtista}">`;
                     const linkArtista = document.createElement("a");
-                    linkArtista.href = `/crear-index-artista?nombre=${nombreArtista}`;
+                    linkArtista.href = `/api/artista/crear-index-artista?nombre=${nombreArtista}`;
                     linkArtista.classList.add("link_artista");
                     linkArtista.appendChild(tarj);
                     zonaTarj.appendChild(linkArtista);
@@ -65,23 +65,6 @@ fetch(`/artista/${nombreArtistaParametro}`)//agregado antes estaba "jsons/artist
     });
 })
 .catch(err => console.error("Error: ",err));
-
-/* La estructura termina siendo:
-    <div id="zona_gen">
-
-        <div class="tarj_gen"> //Se repite por genero
-            <h2>TITULO GENERO</h2>
-            <div class="zona_tarj">
-
-                <div class="tarj_art"> //Se repite por 3 artistas
-                    <p>nombre</p>
-                    <img src="link img" alt>
-                </div>
-
-            </div>
-        </div>
-
-    </div> */
 
 /* Viendo que no tenemos acceso al artistas similares de spotify se podriamos implementar
 algun metodo para setear similitud entre artistas de manera arbitraria

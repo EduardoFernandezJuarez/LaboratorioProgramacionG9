@@ -2,287 +2,287 @@
   "artistas": [
     {
       "nombre": "Taylor Swift",
-      "imagen": "imagenes/taylorswift.jpg",
+      "imagen": "/imagenes/taylorswift.jpg",
       "generos": ["Pop", "Country"]
     },
     {
       "nombre": "Radiohead",
-      "imagen": "imagenes/radiohead.jpg",
+      "imagen": "/imagenes/radiohead.jpg",
       "generos": ["Alternative Rock", "Experimental"]
     },
     {
       "nombre": "Arctic Monkeys",
-      "imagen": "imagenes/arcticmonkeys.jpg",
+      "imagen": "/imagenes/arcticmonkeys.jpg",
       "generos": ["Indie Rock", "Alternative Rock"]
     },
     {
       "nombre": "ABBA",
-      "imagen": "imagenes/abba.png",
+      "imagen": "/imagenes/abba.png",
       "generos": ["Pop", "Disco"]
     },
     {
       "nombre": "The Smiths",
-      "imagen": "imagenes/thesmiths.jpg",
+      "imagen": "/imagenes/thesmiths.jpg",
       "generos": ["Alternative Rock", "Indie Pop", "Post-Punk"]
     },
     {
       "nombre": "Lady Gaga",
-      "imagen": "imagenes/ladygaga.jpg",
+      "imagen": "/imagenes/ladygaga.jpg",
       "generos": ["Pop", "Dance", "Electronic"]
     },
     {
       "nombre": "Al Green",
-      "imagen": "imagenes/algreen.jpg",
+      "imagen": "/imagenes/algreen.jpg",
       "generos": ["Soul", "R&B"]
     },
     {
       "nombre": "The Cranberries",
-      "imagen": "imagenes/thecranberries.jpg",
+      "imagen": "/imagenes/thecranberries.jpg",
       "generos": ["Alternative Rock", "Dream Pop"]
     },
     {
       "nombre": "The Cure",
-      "imagen": "imagenes/thecure.jpg",
+      "imagen": "/imagenes/thecure.jpg",
       "generos": ["Post-Punk", "New Wave", "Gothic Rock"]
     },
     {
       "nombre": "Pixies",
-      "imagen": "imagenes/pixies.jpg",
+      "imagen": "/imagenes/pixies.jpg",
       "generos": ["Alternative Rock", "Indie Rock"]
     },
     {
       "nombre": "David Bowie",
-      "imagen": "imagenes/davidbowie.jpg",
+      "imagen": "/imagenes/davidbowie.jpg",
       "generos": ["Rock", "Glam Rock", "Art Rock"]
     },
     {
       "nombre": "Dua Lipa",
-      "imagen": "imagenes/dualipa.jpg",
+      "imagen": "/imagenes/dualipa.jpg",
       "generos": ["Pop", "Dance", "Disco"]
     },
     {
       "nombre": "Sabrina Carpenter",
-      "imagen": "imagenes/sabrinacarpenter.png",
+      "imagen": "/imagenes/sabrinacarpenter.png",
       "generos": ["Pop"]
     },
     {
       "nombre": "Gustavo Cerati",
-      "imagen": "imagenes/cerati.jpg",
+      "imagen": "/imagenes/cerati.jpg",
       "generos": ["Rock", "Pop Rock", "Alternative"]
     },
     {
       "nombre": "The Killers",
-      "imagen": "imagenes/thekillers.jpg",
+      "imagen": "/imagenes/thekillers.jpg",
       "generos": ["Alternative Rock", "New Wave", "Indie Rock"]
     },
     {
       "nombre": "Interpol",
-      "imagen": "imagenes/interpol.jpg",
+      "imagen": "/imagenes/interpol.jpg",
       "generos": ["Post-Punk Revival", "Indie Rock"]
     },
     {
       "nombre": "Manny Walters",
-      "imagen": "imagenes/mannywalters.jpg",
+      "imagen": "/imagenes/mannywalters.jpg",
       "generos": ["Soul", "Blues"]
     },
     {
       "nombre": "Olivia Rodrigo",
-      "imagen": "imagenes/oliviarodrigo.jpg",
+      "imagen": "/imagenes/oliviarodrigo.jpg",
       "generos": ["Pop", "Pop Rock", "Alternative"]
     },
     {
       "nombre": "The Police",
-      "imagen": "imagenes/thepolice.jpg",
+      "imagen": "/imagenes/thepolice.jpg",
       "generos": ["Rock", "New Wave", "Reggae Rock"]
     },
     {
       "nombre": "Queens of the Stone Age",
-      "imagen": "imagenes/qotsa.jpg",
+      "imagen": "/imagenes/qotsa.jpg",
       "generos": ["Rock", "Stoner Rock", "Alternative Rock"]
     },
     {
       "nombre": "Red Hot Chili Peppers",
-      "imagen": "imagenes/rhcp.jpg",
+      "imagen": "/imagenes/rhcp.jpg",
       "generos": ["Funk Rock", "Alternative Rock"]
     },
     {
       "nombre": "The Smashing Pumpkins",
-      "imagen": "imagenes/thesmashingpumpkins.jpg",
+      "imagen": "/imagenes/thesmashingpumpkins.jpg",
       "generos": ["Alternative Rock", "Grunge", "Dream Pop"]
     },
     {
       "nombre": "Ramones",
-      "imagen": "imagenes/ramones.jpg",
+      "imagen": "/imagenes/ramones.jpg",
       "generos": ["Punk Rock", "Alternative Rock"]
     },
     {
       "nombre": "Sex Pistols",
-      "imagen": "imagenes/sexpistols.jpg",
+      "imagen": "/imagenes/sexpistols.jpg",
       "generos": ["Punk Rock", "Post-Punk"]
     },
     {
       "nombre": "Ozzy Osbourne",
-      "imagen": "imagenes/ozzyosbourne.jpg",
+      "imagen": "/imagenes/ozzyosbourne.jpg",
       "generos": ["Rock", "Glam Rock"]
     },
     {
       "nombre": "Blondie",
-      "imagen": "imagenes/blondie.jpg",
+      "imagen": "/imagenes/blondie.jpg",
       "generos": ["New Wave", "Pop", "Disco"]
     },
     {
       "nombre": "Tame Impala",
-      "imagen": "imagenes/tameimpala.jpg",
+      "imagen": "/imagenes/tameimpala.jpg",
       "generos": ["Alternative Rock", "Psychedelic Pop"]
     },
     {
       "nombre": "The Strokes",
-      "imagen": "imagenes/thestrokes.jpg",
+      "imagen": "/imagenes/thestrokes.jpg",
       "generos": ["Indie Rock", "Alternative Rock"]
     },
     {
       "nombre": "Paramore",
-      "imagen": "imagenes/paramore.jpg",
+      "imagen": "/imagenes/paramore.jpg",
       "generos": ["Pop Rock", "Alternative Rock"]
     },
     {
       "nombre": "Amy Winehouse",
-      "imagen": "imagenes/amywinehouse.jpg",
+      "imagen": "/imagenes/amywinehouse.jpg",
       "generos": ["Soul", "R&B"]
     },
     {
       "nombre": "Adele",
-      "imagen": "imagenes/adele.jpg",
+      "imagen": "/imagenes/adele.jpg",
       "generos": ["Pop", "Soul"]
     },
     {
       "nombre": "Fleetwood Mac",
-      "imagen": "imagenes/fleetwoodmac.jpg",
+      "imagen": "/imagenes/fleetwoodmac.jpg",
       "generos": ["Rock", "Pop Rock"]
     },
     {
       "nombre": "Lana Del Rey",
-      "imagen": "imagenes/lanadelrey.jpg",
+      "imagen": "/imagenes/lanadelrey.jpg",
       "generos": ["Pop", "Dream Pop"]
     },
     {
       "nombre": "The 1975",
-      "imagen": "imagenes/the1975.jpg",
+      "imagen": "/imagenes/the1975.jpg",
       "generos": ["Pop Rock", "Alternative Rock"]
     },
     {
       "nombre": "The White Stripes",
-      "imagen": "imagenes/thewhitestripes.jpg",
+      "imagen": "/imagenes/thewhitestripes.jpg",
       "generos": ["Alternative Rock", "Blues"]
     },
     {
       "nombre": "Franz Ferdinand",
-      "imagen": "imagenes/franzferdinand.jpg",
+      "imagen": "/imagenes/franzferdinand.jpg",
       "generos": ["Indie Rock", "Post-Punk Revival"]
     },
     {
       "nombre": "Depeche Mode",
-      "imagen": "imagenes/depechemode.jpg",
+      "imagen": "/imagenes/depechemode.jpg",
       "generos": ["Electronic", "New Wave"]
     },
     {
       "nombre": "The Doors",
-      "imagen": "imagenes/thedoors.jpg",
+      "imagen": "/imagenes/thedoors.jpg",
       "generos": ["Rock", "Psychedelic Rock"]
     },
     {
       "nombre": "Billie Eilish",
-      "imagen": "imagenes/billieeilish.jpg",
+      "imagen": "/imagenes/billieeilish.jpg",
       "generos": ["Pop", "Alternative"]
     },
     {
       "nombre": "Muse",
-      "imagen": "imagenes/muse.jpg",
+      "imagen": "/imagenes/muse.jpg",
       "generos": ["Alternative Rock", "Progressive Rock"]
     },
     {
       "nombre": "No Doubt",
-      "imagen": "imagenes/nodoubt.jpg",
+      "imagen": "/imagenes/nodoubt.jpg",
       "generos": ["Pop Rock", "New Wave"]
     },
     {
       "nombre": "Foo Fighters",
-      "imagen": "imagenes/foofighters.jpg",
+      "imagen": "/imagenes/foofighters.jpg",
       "generos": ["Rock", "Alternative Rock", "Grunge"]
     },
     {
       "nombre": "Kylie Minogue",
-      "imagen": "imagenes/kylieminogue.jpg",
+      "imagen": "/imagenes/kylieminogue.jpg",
       "generos": ["Pop", "Dance", "Disco"]
     },
     {
       "nombre": "Alicia Keys",
-      "imagen": "imagenes/aliciakeys.jpg",
+      "imagen": "/imagenes/aliciakeys.jpg",
       "generos": ["Soul", "R&B", "Pop"]
     },
     {
       "nombre": "U2",
-      "imagen": "imagenes/u2.jpg",
+      "imagen": "/imagenes/u2.jpg",
       "generos": ["Rock", "New Wave", "Pop Rock"]
     },
     {
       "nombre": "The Clash",
-      "imagen": "imagenes/theclash.jpg",
+      "imagen": "/imagenes/theclash.jpg",
       "generos": ["Rock", "Post-Punk", "New Wave"]
     },
     {
       "nombre": "Soda Stereo",
-      "imagen": "imagenes/sodastereo.jpg",
+      "imagen": "/imagenes/sodastereo.jpg",
       "generos": ["Rock", "Pop Rock", "Alternative Rock"]
     },
     {
       "nombre": "Charly García",
-      "imagen": "imagenes/charlygarcia.jpg",
+      "imagen": "/imagenes/charlygarcia.jpg",
       "generos": ["Rock", "Pop Rock"]
     },
     {
       "nombre": "Luis Alberto Spinetta",
-      "imagen": "imagenes/spinetta.jpg",
+      "imagen": "/imagenes/spinetta.jpg",
       "generos": ["Rock", "Alternative Rock"]
     },
     {
       "nombre": "Fito Páez",
-      "imagen": "imagenes/fitopaez.jpg",
+      "imagen": "/imagenes/fitopaez.jpg",
       "generos": ["Pop Rock", "Rock"]
     },
     {
       "nombre": "Andrés Calamaro",
-      "imagen": "imagenes/andrescalamaro.jpg",
+      "imagen": "/imagenes/andrescalamaro.jpg",
       "generos": ["Rock", "Pop Rock"]
     },
     {
       "nombre": "Babasónicos",
-      "imagen": "imagenes/babasonicos.jpg",
+      "imagen": "/imagenes/babasonicos.jpg",
       "generos": ["Alternative Rock", "Pop Rock"]
     },
     {
       "nombre": "Divididos",
-      "imagen": "imagenes/divididos.jpg",
+      "imagen": "/imagenes/divididos.jpg",
       "generos": ["Rock", "Alternative Rock"]
     },
     {
       "nombre": "Los Fabulosos Cadillacs",
-      "imagen": "imagenes/lfc.jpg",
+      "imagen": "/imagenes/lfc.jpg",
       "generos": ["Rock", "Alternative Rock"]
     },
     {
       "nombre": "Las Pelotas",
-      "imagen": "imagenes/laspelotas.jpg",
+      "imagen": "/imagenes/laspelotas.jpg",
       "generos": ["Rock", "Alternative Rock"]
     },
     {
       "nombre": "Los Enanitos Verdes",
-      "imagen": "imagenes/losenanitosverdes.jpg",
+      "imagen": "/imagenes/losenanitosverdes.jpg",
       "generos": ["Pop Rock", "Rock"]
     },
     {
       "nombre": "Hornet",
-      "imagen": "imagenes/hornet.jpg",
+      "imagen": "/imagenes/hornet.jpg",
       "generos": ["R&B", "Rock"]
     }
   ]
