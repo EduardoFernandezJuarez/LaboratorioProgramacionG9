@@ -21,6 +21,13 @@ fetch(`/api/artista/${nombreArtistaParametro}`)//agregado antes estaba "jsons/ar
     // const artistas = data.artistas;
     // const artista = artistas.find(a => a.nombre === artistaSeleccionado);
 
+    const tituloArtista = document.querySelector(".titulo_artista");
+    tituloArtista.textContent = data.nombre;
+
+    const imagenArtista = document.querySelector(".imagen_artista");
+    imagenArtista.src = data.imagen;
+    imagenArtista.alt = `Imagen de ${data.nombre}`;
+
     const artista = data;
     
     artista.generos.forEach(genero => {

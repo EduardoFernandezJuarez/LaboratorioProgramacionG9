@@ -1,0 +1,29 @@
+<html> 
+    <head>
+        <link rel="stylesheet" href="/css/styles-artista.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel = "stylesheet" href="/css/formulario-artista.css">
+        <!--Google font para fuente Raleway-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body id="body_index">
+        <header>
+            <nav class = "topnav">
+                <a class="topnav_icon" href="/">Inicio</a>
+            </nav>
+        </header>
+        <h1 class = "titulo_artista" >Registrar un artista emergente</h1>
+
+        <form class = "formulario" action = "/api/artista/crearArtista" method = "POST">
+            <input type="text" name="nombre" placeholder="Nombre del artista" required><br>
+            <input type="text" name="genero" placeholder="Genero musical" required><br> 
+            <input type="file" name="imagen" placeholder="Imagen del artista" required><br>
+            <button type="submit">Registrar</button>
+        </form>
+        
+
+    </body>
+</html>

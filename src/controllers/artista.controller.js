@@ -69,3 +69,31 @@ exports.getArtistasRelacionados = (req, res) => {
 exports.getIndexArtista = (req, res) => {
     res.sendFile(path.join(__dirname,'../../public/html/index-artista.html'));
 };
+
+exports.postArtista = (req, res) => {
+
+    //Obtnemos los datos ingresados en el formulario
+    const nombre = req.body.nombre;
+    const genero = req.body.genero;
+    const imagen = req.body.imagen;
+
+    // leemos el archivo JSOn de los artistas
+    const rutaArchivo = path.join(__dirname, "../../public/jsons/artistasBD.json");
+    const data = fs.readFileSync(rutaArchivo, "utf8");
+    const { artistas } = JSON.parse(data);
+
+    // Modificamos el array de artistas
+    artistas.push({
+        nombre: nombre,
+        generos: [genero],
+        imagen: "/imagenes/" + imagen
+    });
+
+    // Escribimos el nuevo array en el archivo JSON
+    fs.writeFileSync(rutaArchivo, JSON.stringify({ artistas }, null, 2));
+
+    //guardamos la imagen en la carpeta de imagenes con multer, para mas adelante
+
+    console.log(`Artista ${nombre}, genero ${genero} con imagen ${imagen} reistrado!`);
+    res.redirect("http://localhost:4000/");
+};
