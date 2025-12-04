@@ -476,8 +476,7 @@
     {
       "nombre": "Juan",
       "generos": [
-        "Rock",
-        "Pop"
+        "Rock"
       ],
       "imagen": "/imagenes/juan.jpg"
     }
