@@ -472,6 +472,14 @@
         "R&B",
         "Rock"
       ]
+    },
+    {
+      "nombre": "Juan",
+      "generos": [
+        "Rock",
+        "Pop"
+      ],
+      "imagen": "/imagenes/juan.jpg"
     }
   ]
 }

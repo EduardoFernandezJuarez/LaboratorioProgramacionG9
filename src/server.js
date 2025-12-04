@@ -19,7 +19,6 @@ app.get('/', (req, res) => {
 // Permite que Express pueda entender los datos enviados por un formulario HTML tradicional.
 app.use(express.urlencoded({ extended: true }));
 
-
 // Testeo para metodo POST
 app.post("/test", (req, res) => {
     const num1 = parseFloat(req.body.num1);
@@ -29,12 +28,9 @@ app.post("/test", (req, res) => {
     res.send(`EL resultado de ${num1} + ${num2} = ${result}`);
 });
 
-
-
 // Rutas utilizadas de artista
 app.use("/api/artista", require("../src/routes/artista.routes"));
 
 app.listen(port, () => {
   console.log(`Pruebe el servidor en un navegador accediendo a http://localhost:4000`);
 });
-

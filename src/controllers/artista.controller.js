@@ -82,18 +82,30 @@ exports.postArtista = (req, res) => {
     const data = fs.readFileSync(rutaArchivo, "utf8");
     const { artistas } = JSON.parse(data);
 
-    // Modificamos el array de artistas
-    artistas.push({
-        nombre: nombre,
-        generos: [genero],
-        imagen: "/imagenes/" + imagen
+    const repetido = artistas.find((artista) => {
+        return artista.nombre.toLocaleLowerCase() === nombre.toLowerCase();
     });
 
-    // Escribimos el nuevo array en el archivo JSON
-    fs.writeFileSync(rutaArchivo, JSON.stringify({ artistas }, null, 2));
+    // verificamos si el artista ya existe
+    if (repetido != undefined){
+        console.log("Artista con nombre ya registrado, ingrese otro nombre");
+        /* Modificar en algun funturo o averiguar como mejorar mensaje de error */
+        return res.status(404).send({ error: `Artista con nombre ${nombre} ya registado, ingrese otro nombre`});
+    }else{
+        // Modificamos el array de artistas y agregamos el nuevo artista
+        artistas.push({
+            nombre: nombre,
+            generos: [genero],
+            imagen: "/imagenes/" + imagen
+        });
+        
+        // Escribimos el nuevo array en el archivo JSON
+        fs.writeFileSync(rutaArchivo, JSON.stringify({ artistas }, null, 2));
+        
+        //guardamos la imagen en la carpeta de imagenes con multer, para mas adelante implementar esta fucnionalidad
+        
+        console.log(`Artista ${nombre}, genero ${genero} con imagen ${imagen} reistrado!`);
+    }
 
-    //guardamos la imagen en la carpeta de imagenes con multer, para mas adelante
-
-    console.log(`Artista ${nombre}, genero ${genero} con imagen ${imagen} reistrado!`);
     res.redirect("http://localhost:4000/");
 };
